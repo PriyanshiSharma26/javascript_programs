@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let no=prompt("enter no");
+        let temp=no;
+
+        let r;
+        let sum=0;
+        let len=no.toString().length;
+
+        while(no>0)
+    {
+         r=no%10;
+         sum=sum+parseInt(Math.pow(r,len));
+         no=Math.floor(no/10);   
+    }
+         if(sum==temp){
+            console.log("amstong number");
+         }
+         else{
+            console.log("not amstong");
+         }
+
+
+
+        </script>
+    
+</body>
+</html>
