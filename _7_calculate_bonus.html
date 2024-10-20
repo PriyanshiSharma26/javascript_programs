@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        function  sal(arr)
+        {
+            let newarr=[]
+            for(let i=0;i<arr.length;i++)
+        {
+            let bonus=arr[i]*0.1
+
+            newarr.push(arr[i]+bonus)
+        }
+            return newarr
+
+        }
+        
+
+    
+
+
+      let salary=[50000,60000,70000,45000,40000]
+
+       let a=  sal(salary)
+       document.write(a)
+
+        </script>
+    
+</body>
+</html>
