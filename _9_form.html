@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Enter userId"/><br><br>
+    <input  id="pass_no" placeholder="Enter password"/><br><br>
+    <button  type="button" onclick="form_login()">Submit</button>
+    <p id="search"></p>
+
+    <p id="search1"> name is=</p>
+    <p id="search2"> password is=</p>
+
+
+    <script>
+        function form_login() {
+            let userid = document.getElementById("input").value;
+            let pass = document.getElementById("pass_no").value;
+
+            if (pass == "12345") {
+                document.getElementById("search").innerHTML = "Password is correct.";
+            } else {
+                document.getElementById("search").innerHTML = "Password is incorrect.";
+            }
+            document.getElementById("search1").innerHTML=userid;
+            document.getElementById("search2").innerHTML=pass;
+        }
+    </script>
+</body>
+</html>
