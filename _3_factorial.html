@@ -1,0 +1,43 @@
+<!-- 4. Write a program to find the factorial of a number.
+Input: num = 5
+Output: Factorial of 5 is 120 -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number"  placeholder="enter no" id="input_1">
+    <button onclick="factorial()">submit</button><br>
+    <p id="search1"></p>
+    <script>
+
+        function factorial()
+        {
+            let no = document.getElementById("input_1").value;
+              
+              
+              let fact=1
+             for (let i = 1; i<=no; i++) 
+             {
+                fact=fact*i
+                
+             }
+        document.getElementById("search1").textContent= "factorial of "+no+ " is = " + fact;
+
+
+             
+
+        }
+
+        </script>
+    
+</body>
+</html>
