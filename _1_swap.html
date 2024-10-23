@@ -1,0 +1,59 @@
+<!-- 1. Write a program to swap two variables.
+Input: a = 5, b = 10
+Output: a = 10, b = 5 -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+  First no:  <input type="number" id="input_1" placeholder="Enter first  no"/><br><br>
+  Second no:  <input type="number" id="input_2" placeholder="Enter second  no"/><br><br>
+   <button onclick="swap()">submit</button><br>
+   <!-- <p id="search1"> first no is=</p>
+    <p id="search2"> second no is =</p> -->
+
+
+
+    <h2> After swapping</h2>
+
+  First no:  <input id="cid"><br><br>
+   second no: <input id="did">
+
+
+
+    <script>
+       
+
+       function swap()
+       {
+
+        let no_1 = parseInt(document.getElementById("input_1").value);
+        let no_2 = parseInt(document.getElementById("input_2").value);
+
+        let temp=no_1
+        no_1=no_2
+        no_2=temp
+
+        // document.getElementById("search1").innerHTML=no_1;
+        //     document.getElementById("search2").innerHTML=no_2;
+
+        document.getElementById("cid").value=no_1
+        document.getElementById("did").value=no_2
+
+
+    
+       }
+
+
+        </script>
+    
+</body>
+</html>
