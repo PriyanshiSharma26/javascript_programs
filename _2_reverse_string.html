@@ -1,0 +1,44 @@
+<!-- 3. Write a program to reverse a string.
+Input: "hello"
+Output: "olleh" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   enter string: <input type="text" id="input_1" placeholder="Enter string"/><br><br>
+
+   <button onclick="rev_str()">submit</button><br>
+   <p id="search"></p>
+    <script>
+
+
+               function rev_str()
+               {
+                let new_str=" ";
+               let str = document.getElementById("input_1").value;
+
+                  for(let i=str.length-1;i>=0;i--)
+                  {
+                    new_str+=str[i];
+
+                  }
+                
+
+                  str=new_str
+        
+                  document.getElementById("search").textContent= "reverse string is = " + str;
+
+
+               }
+       
+
+        </script>
+    
+</body>
+</html>
