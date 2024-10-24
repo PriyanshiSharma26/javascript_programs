@@ -1,0 +1,39 @@
+<!-- 8. Write a program to count the number of vowels in a string.
+Input: "javascript"
+Output: There are 3 vowels -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Enter string"><br><br>
+
+    <button onclick="count_vowel()">Submit</button>
+
+    <p id="find"></p>
+
+    <script>
+        function count_vowel() {
+            let str = document.getElementById("input").value; // Get the input value
+            let count = 0; // Initialize the vowel count
+
+            // Loop through each character in the string
+            for (let i = 0; i < str.length; i++) {
+                // Check for each vowel in both lower and upper case
+                if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ||
+                    str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U') {
+                    count++; // Increment the count if it's a vowel
+                }
+            }
+
+            // Display the result
+            document.getElementById('find').textContent = "Count of vowels in \"" + str + "\" is: " + count;
+        }
+    </script>
+</body>
+</html>
