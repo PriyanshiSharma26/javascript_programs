@@ -1,0 +1,49 @@
+<!-- 9. Write a program to check if a number is prime.
+Input: num = 13
+Output: 13 is a prime number -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="input" placeholder="enter no"><br><br>
+    <button onclick="check_prime()">submit</button>
+
+    <p id="p"></p>
+
+    <script>
+
+        function check_prime()
+        {
+
+            let count=0
+            let a=parseInt(document.getElementById("input").value)
+
+            for(let i=2;i<=a;i++)
+        {
+            if(a%i==0)
+        {
+            count++
+        }
+        }
+
+        if(count==1)
+        {
+            document.getElementById("p").textContent = a+"= is prime";
+
+        }
+        else{
+            document.getElementById("p").textContent = a+" = not prime";
+        }
+        }
+
+        </script>
+    
+</body>
+</html>
