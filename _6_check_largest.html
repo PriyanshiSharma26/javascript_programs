@@ -1,0 +1,57 @@
+<!-- 7. Write a program to find the largest of three numbers.
+Input: a = 10, b = 15, c = 8
+Output: 15 is the largest -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> enter numbers for comparison</h1>
+
+    <input type="number" id="input_1" placeholder="enter first no"><br><br>
+    <input type="number" id="input_2" placeholder="enter second no"><br><br>
+    <input type="number" id="input_3" placeholder="enter third no">
+
+    <button onclick="largest()">
+       submit 
+    </button>
+    <p id="p"></p>
+
+    <script>
+             function largest()
+             {
+                let a= parseInt(document.getElementById("input_1").value)
+                let b=parseInt(document.getElementById("input_2").value)
+                let c=parseInt(document.getElementById("input_3").value)
+
+
+                if(a>b && b>c)
+             {
+                document.getElementById("p").textContent = a+" is largest";
+             }
+
+             else if(b>a && b>c)
+             {
+                document.getElementById("p").textContent = b+" is largest";
+                
+             }
+             else{
+                document.getElementById("p").textContent = c+" is largest";
+             }
+
+
+                
+
+             }
+
+
+
+        </script>
+    
+</body>
+</html>
