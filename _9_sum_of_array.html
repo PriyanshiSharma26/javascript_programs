@@ -1,0 +1,52 @@
+<!-- 10. Write a program to find the sum of all elements in an array.
+Input: [1, 2, 3, 4, 5]
+Output: Sum is 15 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Array Elements</title>
+</head>
+<body>
+    <h2>Calculate the Sum</h2>
+    <textarea id="input" placeholder="Enter numbers separated by commas"></textarea>
+    <br>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <div id="result"></div>
+
+    <script>
+        function calculateSum() {
+            const input = document.getElementById("input").value.trim(); // Get input and trim whitespace
+            let sum = 0; // Initialize sum
+            let currentNumber = ''; // String to hold the current number
+
+            if (input ==='') {
+                // If input is empty, display a message
+                document.getElementById("result").innerText = 'Please enter some numbers.';
+                return;
+            }
+
+            for (let char of input) { // Loop through each character in input
+                if (char === ',') { // Check for a comma
+                    if (currentNumber) { // If currentNumber is not empty
+                        sum += parseInt(currentNumber); // Add it to sum
+                        currentNumber = ''; // Reset for the next number
+                    }
+                } else { // Build the current number
+                    currentNumber += char; 
+                }
+            }
+
+            // Add the last number if there is one
+            if (currentNumber) {
+                sum += parseInt(currentNumber);
+            }
+
+            // Display the result
+            document.getElementById("result").innerText = `Sum is ${sum}`;
+        }
+    </script>
+</body>
+</html>
