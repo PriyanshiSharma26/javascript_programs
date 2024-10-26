@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num(arr) {
+            let count = 0; // Counter for zeros
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === 0) {
+                    count++; // Count zeros
+                }
+            }
+            
+            // Create a new array with the additional zeros
+            let newArr = [...arr]; // Copy the original array
+            for (let j = 0; j < count; j++) {
+                newArr.push(0); // Append zeros
+            }
+            return newArr;
+        }
+
+        let a = [0, , 1, 0, 3, 2]; // Original array
+        let res = num(a);
+        document.write(res.join(', ')); // Display the result as a string
+    </script>
+</body>
+</html>
