@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function common(arr1, arr2) {
+            let arr3 = [];
+            for (let i = 0; i < arr1.length; i++) {
+                for (let k = 0; k < arr2.length; k++) { // Increment k instead of i
+                    if (arr1[i] === arr2[k]) {
+                        arr3.push(arr1[i]); // Use push to add elements to arr3
+                    }
+                }
+            }
+            return arr3;
+        }
+
+        let arr1 = [1, 2, 3];
+        let arr2 = [2, 3, 4];
+        let arr3 = common(arr1, arr2);
+        document.write(arr3.join(', ')); // Format the output as a string
+    </script>
+</body>
+</html>
