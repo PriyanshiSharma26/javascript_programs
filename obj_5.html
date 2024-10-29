@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table{
+        background-color: black;
+        color: white;
+        
+
+    }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var data = [{id:1, name:"Aman",department:"computer science",salary:40000,age:30},{id:2, name:"Raha",department:"management",salary:50000,age:35},{id:3, name:"Rohan",department:"commerce",salary:45000,age:40},{id:4, name:"Priyanshi",department:"computer science",salary:1000000,age:50},{id:5, name:"Ritu",department:"IT",salary:60000,age:50}]
+        document.write("<table border='2' width='100%'>");
+            document.write("<tr>");
+            document.write("<th>Id</th>");
+            document.write("<th>name</th>");
+            document.write("<th>department</th>");
+            document.write("<th>salary</th>"); 
+            document.write("<th>Age</th>");   
+            document.write("</tr>");    
+            for(var product of data){
+                document.write("<tr>");
+                document.write(`<td>${product.id}</td>`);
+                document.write("<td>"+product.name+"<br>");
+                document.write("<td>"+product.department+"</td>");
+                document.write("<td>"+product.salary+"</td>");    
+                document.write("<td>"+product.age+"</td>"); 
+                document.write("</tr>");    
+            }
+        document.write("</table>");
+    </script>
+    
+
+    
+</body>
+</html>
