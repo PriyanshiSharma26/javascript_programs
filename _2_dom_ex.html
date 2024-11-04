@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <img  id="main" src="girly.jpg" width="100px" height="100px"/><br><br>
+        <button onclick="incrementSize()">+</button>
+        <button onclick="decrementSize()">-</button>
+
+
+        </center>
+        <script>
+            function incrementSize()
+            {
+                var mainImage=document.getElementById("main")
+                mainImage.width=mainImage.width*1+50
+                mainImage.height=mainImage.height*1+50
+            }
+
+            function decrementSize()
+            {
+                var mainImage=document.getElementById("main")
+                mainImage.width=mainImage.width*1-20
+                mainImage.height=mainImage.height*1-20
+            }
+        </script>
+    
+</body>
+</html>
