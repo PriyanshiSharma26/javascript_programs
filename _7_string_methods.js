@@ -1,0 +1,11 @@
+let s=" xyz "
+console.log(s.padStart(10,"hello"))
+console.log(s.at(-2))
+console.log(s.charCodeAt(0))
+console.log(s.toUpperCase())
+console.log(s.toLowerCase())
+console.log(s.concat(" ","1234"))
+console.log(s.slice(1,4))
+console.log(s.substring(-1,2))
+console.log(s.substr(1,2))
+console.log(s.trim())
