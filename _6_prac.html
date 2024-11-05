@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        let s="this is a \"string\" "
+        document.writeln(s)
+
+        let s2="The \'sun\' rises in the east"
+        document.writeln(s2)
+
+        let s3="Good work -'keep it up'"
+        document.writeln(s3)
+
+
+        let s4=document.createElement('p')
+        s4.textContent=s
+
+        let p=document.getElementsByTagName('body')[0]
+        p.appendChild(s4)
+
+
+    </script>
+    
+</body>
+</html>
