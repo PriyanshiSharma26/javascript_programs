@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter Strings</h1>
+    <input id="input_1" placeholder="Enter first string"/><br><br>
+    <input  id="input_2" placeholder="Enter second string"/><br><br>
+    <button onclick="str_box()">concat</button><br>
+    
+    
+    <h2> result of concatination</h2>
+
+    <input id="cid"><br><br>
+
+    <h2>upper case</h2>
+
+    <button onclick="change_upper_case()">uppercase</button><br><br>
+    
+    <input id="c2"><br><br>
+
+    <h3>lower case</h3>
+
+    <button onclick="change_lower_case()">lowercase</button><br><br>
+
+    <input id="c3"><br><br>
+
+
+
+    <script>
+        
+
+        
+       function str_box()
+       {
+
+         let str1 = document.getElementById("input_1").value;
+         let str2 = document.getElementById("input_2").value;
+
+
+        let str3=str1.concat(" ",str2)
+
+        document.getElementById("cid").value=str3
+       }
+
+       function change_upper_case()
+       {
+
+        let str4=document.getElementById("cid").value
+        let s=str4.toUpperCase()
+        document.getElementById("c2").value=s
+
+        
+       }
+
+       function  change_lower_case()
+       {
+        let a=document.getElementById("cid").value
+        let b=a.toLowerCase()
+        document.getElementById("c3").value=b
+       }
+
+
+       
+        </script>
+    
+</body>
+</html>
